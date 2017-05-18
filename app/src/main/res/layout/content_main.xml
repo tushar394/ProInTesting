@@ -12,15 +12,20 @@
     tools:context="com.example.lenovo.prointesting.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/parent" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="System Testing"
+        android:text="Manual Testing"
         android:id="@+id/sT"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
@@ -29,21 +34,8 @@
         android:textSize="20dp" />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Web Services Testing"
-        android:id="@+id/wT"
-        android:layout_below="@+id/sT"
-        android:layout_alignRight="@+id/sT"
-        android:layout_alignEnd="@+id/sT"
-        android:layout_alignLeft="@+id/sT"
-        android:layout_alignStart="@+id/sT"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp" />
-
-    <Button
-        android:layout_width="wrap_content"
+        <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Performance Testing"
         android:id="@+id/pT"
@@ -54,4 +46,6 @@
         android:layout_alignStart="@+id/wT"
         android:textColor="@color/colorPrimary"
         android:textSize="20dp" />
+
+    </LinearLayout>
 </RelativeLayout>

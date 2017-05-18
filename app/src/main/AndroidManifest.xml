@@ -30,7 +30,12 @@
         <activity android:name=".lifecycle" />
         <activity android:name=".Requirement" />
         <activity android:name=".Requirement2" />
-        <activity android:name=".wst"></activity>
+        <activity android:name=".wst" />
+        <activity android:name=".testPlan" />
+        <activity android:name=".testScript" />
+        <activity android:name=".testExecution" />
+        <activity android:name=".testSummary" />
+        <activity android:name=".interview"></activity>
     </application>
 
 </manifest>

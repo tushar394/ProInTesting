@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_requirement2"
+    android:id="@+id/activity_test_summary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.lenovo.prointesting.Requirement2">
-
+    tools:context="com.example.lenovo.prointesting.testSummary">
 
     <TextView
-        android:text="Requirement Analysis"
+        android:text="Test Summary"
         android:layout_width="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView4"
+        android:id="@+id/tvSummary"
         android:layout_height="40dp"
         android:textSize="20sp"
         android:gravity="center"
@@ -33,31 +31,31 @@
         android:layout_toLeftOf="@+id/nextR1" />
 
 
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scrollbars="vertical"
+        android:id="@+id/webSummary"
+        android:layout_below="@+id/tvSummary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
 
-        <WebView
-            android:layout_width="match_parent"
-            android:layout_height="420dp"
-            android:scrollbars="vertical"
-            android:id="@+id/webReq2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView4" />
-
-        <!--<TextView
-            android:text="TextView"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:id="@+id/textReq"
-            android:textSize="15sp"
-            android:maxLines = "20"
-            android:scrollbars = "vertical"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="1dp" />  -->
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/textReq"
+        android:textSize="15sp"
+        android:maxLines = "20"
+        android:scrollbars = "vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="1dp" />  -->
 
 
 
@@ -66,3 +64,4 @@
 
 </RelativeLayout>
 </ScrollView>
+

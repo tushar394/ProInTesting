@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,8 +23,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        WebView webR = (WebView) findViewById(R.id.parent);
+        String data = "<html><body><h4>Please click each link below to know more </h4>" +
+
+                "</body></html>";
+        webR.loadData(data, "text/html", "UTF-8");
+
         systemT = (Button) findViewById(R.id.sT);
-        wst = (Button) findViewById(R.id.wstButt);
+       // wst = (Button) findViewById(R.id.wT);
         systemT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        wst.setOnClickListener(new View.OnClickListener() {
+        /*wst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                Intent intent=new Intent(MainActivity.this,wst.class);
             }
-        });
+        });*/
         }
 
 
